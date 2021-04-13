@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const { readFileSync, writeFileSync } = require("fs");
 
+require("dotenv").config();
+
 const app = express();
 
 app.use(cors());
@@ -26,6 +28,6 @@ app.get("/view-count", (req, res) => {
   res.send(response);
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Its alive at http://localhost:${PORT}`);
 });
