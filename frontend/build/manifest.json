@@ -1,0 +1,8 @@
+{
+  "short_name": "Mark's App",
+  "name": "Mark's Web Application",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
